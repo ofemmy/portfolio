@@ -7,5 +7,8 @@
     "hello":"Hello",
     "nameIntro":"I am Oladayo Olufemi",
     "jobIntro":"Fullstack Web Developer",
-    "knowMore":"More About me"
+    "knowMore":"More About me",
+    "aboutMe1":"My name is Oladayo Olufemi, a fullstack web developer based in Berlin, Germany. My passion and love for problem solving led to my decision to transition from Electrical Engineering to Software Development in 2018.",
+    "aboutMe2":"I have so far gained experience working with programming languages and technologies across the front and back ends of web development, using the skills I have gained to provide solution and create value both for myself and those around me.",
+    "aboutMe3":"I am self-motivated, value-driven and always open to learn new things in order to improve myself."
 }
