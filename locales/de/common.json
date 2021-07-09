@@ -1,3 +1,11 @@
 {
-    "test":"Hallo!"
+    "test":"Hallo!",
+    "home":"Startseite",
+    "about":"Über mich",
+    "projects":"Projekte",
+    "contact":"Kontakt",
+    "hello":"Hallo",
+    "nameIntro":"Ich bin Oladayo Olufemi",
+    "jobIntro":"Fullstack Web Entwickler",
+    "knowMore":"Mehr über mich"
 }

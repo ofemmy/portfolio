@@ -1,3 +1,11 @@
 {
-    "test":"Hello there"
+    "test":"Hello there",
+    "home":"Home",
+    "about":"About",
+    "projects":"Projects",
+    "contact":"Contact",
+    "hello":"Hello",
+    "nameIntro":"I am Oladayo Olufemi",
+    "jobIntro":"Fullstack Web Developer",
+    "knowMore":"More About me"
 }
