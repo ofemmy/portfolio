@@ -1,13 +1,14 @@
 import useTranslation from "next-translate/useTranslation";
 import { DownloadIcon, ChatAlt2Icon } from "@heroicons/react/outline";
 import { Hero, Section, SectionHeading, Tab } from "../components";
-const languages = ["javascript", "php", "python"];
+import { getIcon } from "../hooks/getIcon";
+const languages = ["javascript", "javascript", "python"];
 const webTechnologies = [""];
 const skills = {
   "programming languages": ["javascript", "php", "python"],
+  "technologies & tools": ["node js", "graphql", "git", "html", "css"],
   frameworks: ["react", "vue", "laravel", "express js", "next js"],
-  "technologies & tools": ["node js", "graphql", "git"],
-  database: ["postgres","mongo db"],
+  database: ["postgres", "mongo db"],
 };
 export default function Home() {
   const { t } = useTranslation("common");
@@ -51,14 +52,17 @@ export default function Home() {
                       </h2>
                       <div className="mt-4 space-x-4">
                         {item[1].map((lang) => (
-                          <Tab text={lang} key={lang} />
+                          <Tab key={lang}>
+                            {getIcon(lang)}
+                            <span className="text-xs uppercase">{lang}</span>
+                          </Tab>
                         ))}
                       </div>
                     </div>
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed">
-                  While I have proficiency in working in the above languages and
+                  While I am comfortable in working with the above languages and
                   technologies, I am also open to learning and working with the
                   ones I am not yet familiar with.
                 </p>

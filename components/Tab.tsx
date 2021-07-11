@@ -1,6 +1,10 @@
 interface TabProps {
-  text: string;
+  children: React.ReactNode;
 }
-export default function Tab({ text }: TabProps) {
-  return <span className="px-4 py-2 bg-gray-100 rounded-sm text-gray-600 uppercase text-xs tracking-wider">{text}</span>;
+export default function Tab({ children }: TabProps) {
+  return (
+    <div className="px-2 py-1 bg-gray-100 rounded-sm space-x-2 inline-flex">
+      {children}
+    </div>
+  );
 }
