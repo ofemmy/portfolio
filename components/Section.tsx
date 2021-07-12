@@ -9,7 +9,7 @@ export default function Section({
   children,
 }: SectionProps) {
   return (
-    <div className="min-h-screen py-32" id={id}>
+    <div className={`min-h-screen py-32 ${bgColor}`} id={id}>
       {children}
     </div>
   );

@@ -1,27 +1,29 @@
 import useTranslation from "next-translate/useTranslation";
 import { DownloadIcon, ChatAlt2Icon } from "@heroicons/react/outline";
-import { Hero, Section, SectionHeading, Tab } from "../components";
+import { Hero, ProjectCard, Section, SectionHeading, Tab } from "../components";
+import Projects from "../lib/projects.json";
 import { getIcon } from "../hooks/getIcon";
 const languages = ["javascript", "javascript", "python"];
 const webTechnologies = [""];
 const skills = {
-  "programming languages": ["javascript", "php", "python"],
+  "programming languages": ["javascript", "typescript", "php", "python"],
   "technologies & tools": ["node js", "graphql", "git", "html", "css"],
   frameworks: ["react", "vue", "laravel", "express js", "next js"],
   database: ["postgres", "mongo db"],
 };
+console.log(Object.values(Projects));
 export default function Home() {
   const { t } = useTranslation("common");
   return (
     <>
       <Hero />
       <Section id="about">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-6 sm:px-0">
           <h2 className="uppercase text-center font-bold text-xl text-orange-600">
             About me
           </h2>
           <div className="mt-12">
-            <div className="grid grid-cols-2 gap-8 text-gray-500">
+            <div className="grid sm:grid-cols-2 gap-8 text-gray-500">
               <div className="leading-loose max-w-prose space-y-8">
                 <p>{t("aboutMe1")}</p>
                 <p>{t("aboutMe2")}</p>
@@ -67,6 +69,20 @@ export default function Home() {
                   ones I am not yet familiar with.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section id="projects" bgColor="bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 sm:px-0">
+          <h2 className="uppercase text-center font-bold text-xl text-orange-600">
+            Projects
+          </h2>
+          <div className="mt-12">
+            <div className="grid md:grid-cols-2 gap-10">
+              {Object.values(Projects).map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
             </div>
           </div>
         </div>

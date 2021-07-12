@@ -11,7 +11,13 @@ import {
   FaVuejs,
 } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
-import { SiMongodb, SiNextDotJs, SiPostgresql } from "react-icons/si";
+import {
+  SiMongodb,
+  SiNextDotJs,
+  SiPostgresql,
+  SiTypescript,
+  SiPrismic,
+} from "react-icons/si";
 
 export function getIcon(iconName: string) {
   let IconComponent = null;
@@ -60,6 +66,12 @@ export function getIcon(iconName: string) {
       break;
     case "mongo db":
       IconComponent = <SiMongodb />;
+      break;
+    case "typescript":
+      IconComponent = <SiTypescript />;
+      break;
+    case "prismic cms":
+      IconComponent = <SiPrismic />;
       break;
     default:
       throw new Error("Invalid icon name");

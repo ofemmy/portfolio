@@ -1,0 +1,29 @@
+{
+    "mueller":{
+        "id":1,
+        "slug":"mueller-4-clean",
+        "title":"Mueller 4 clean",
+        "coverImg":"mueller.png",
+        "technologies": ["html","css","javascript"],
+        "excerpt":"Freelance project for a designing the landing page for a cleaning agency based in Berlin.",
+        "description":""
+    },
+    "bruderhilfe":{
+        "id":2,
+        "slug":"bruderhilfe",
+        "title":"Bruderhilfe NGO Website",
+        "coverImg":"bruderhilfe.png",
+        "technologies":["react","next js","prismic cms"],
+        "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
+        "description":""
+    },
+    "geldtrack":{
+        "id":3,
+        "slug":"geldtrack",
+        "title":"Geldtrack",
+        "coverImg":"geldtrack.png",
+        "technologies":["react","graphql","postgres"],
+        "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
+        "description":""
+    }
+}
