@@ -5,3 +5,8 @@ export { default as Navbar } from "./Navbar";
 export { default as Section } from "./Section";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as ProjectCard } from "./ProjectCard";
+export { default as SanitySVG } from "./SanitySVG";
+export { default as AboutSection } from "./AboutSection";
+export { default as ProjectSection } from "./ProjectSection";
+export { default as ContactSection } from "./ContactSection";
+export { default as Label } from "./Label";

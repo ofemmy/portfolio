@@ -18,6 +18,7 @@ import {
   SiTypescript,
   SiPrismic,
 } from "react-icons/si";
+import { SanitySVG } from "../../components";
 
 export function getIcon(iconName: string) {
   let IconComponent = null;
@@ -73,6 +74,9 @@ export function getIcon(iconName: string) {
     case "prismic cms":
       IconComponent = <SiPrismic />;
       break;
+    case "sanity cms":
+      IconComponent = <SanitySVG />;
+      return;
     default:
       throw new Error("Invalid icon name");
   }

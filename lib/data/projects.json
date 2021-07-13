@@ -6,16 +6,18 @@
         "coverImg":"mueller.png",
         "technologies": ["html","css","javascript"],
         "excerpt":"Freelance project for a designing the landing page for a cleaning agency based in Berlin.",
-        "description":""
+        "description":"",
+        "url":"https://www.mueller4clean.com/"
     },
     "bruderhilfe":{
         "id":2,
         "slug":"bruderhilfe",
         "title":"Bruderhilfe NGO Website",
         "coverImg":"bruderhilfe.png",
-        "technologies":["react","next js","prismic cms"],
+        "technologies":["react","next js","sanity cms"],
         "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
-        "description":""
+        "description":"",
+        "url":"https://www.bruder-hilfe.com/"
     },
     "geldtrack":{
         "id":3,
@@ -24,6 +26,17 @@
         "coverImg":"geldtrack.png",
         "technologies":["react","graphql","postgres"],
         "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
-        "description":""
+        "description":"",
+        "url":"https://www.geldtrack.io/"
+    },
+    "pdfkit":{
+        "id":4,
+        "slug":"pdfkit",
+        "title":"Pdf Kit",
+        "coverImg":"pdfkit.png",
+        "technologies":["node js","vue"],
+        "excerpt":"A cross-platform desktop application for merging and splitting pdf files.",
+        "description":"",
+        "url":"https://github.com/ofemmy/pdfkit"
     }
 }
