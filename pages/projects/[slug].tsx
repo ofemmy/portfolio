@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { RewindIcon } from "@heroicons/react/solid";
-import { ImageSlider, Tab } from "../../components";
+import { Tab } from "../../components";
 import projects from "../../lib/data/projects.json";
 import { getIcon } from "../../lib/utils/getIcon";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { ExternalLinkIcon } from "@heroicons/react/outline";
 export async function getStaticPaths() {
   const projectSlugs = Object.values(projects).map((project) => project.slug);
@@ -76,10 +74,10 @@ export default function Project({ project }: Project) {
                   rel="noreferrer"
                   className="inline-flex items-center px-4 py-2 border border-transparent rounded-sm shadow-sm text-base font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 uppercase"
                 >
-                 <span className="flex items-center space-x-2">
-                   <small>See code</small>
-                   <ExternalLinkIcon className="h-4"/>
-                 </span>
+                  <span className="flex items-center space-x-2">
+                    <small>See code</small>
+                    <ExternalLinkIcon className="h-4" />
+                  </span>
                 </a>
               </Link>
             </div>

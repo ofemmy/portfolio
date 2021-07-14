@@ -31,13 +31,14 @@ export default function AboutSection() {
                   <ChatAlt2Icon className="h-4 mr-2" />
                   <span>{t("contactMe")}</span>
                 </a>
-                <button
-                  type="button"
+                {/* <a
+                  download
+                  href={new URL("/Oladayo_Resume.pdf").href}
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium  text-orange-700 bg-orange-100 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                 >
                   <DownloadIcon className="h-4 mr-2" />
                   <span>{t("download")}</span>
-                </button>
+                </a> */}
               </div>
             </div>
             <div className="flex flex-col justify-between">

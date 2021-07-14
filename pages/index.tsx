@@ -7,11 +7,11 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <AboutSection />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
       <ContactSection />
-    </>
+    </div>
   );
 }

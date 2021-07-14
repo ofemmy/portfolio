@@ -11,16 +11,16 @@ export default function Hero() {
   const { t } = useTranslation("common");
   const greet = t("test");
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-7xl px-4 pt-4">
+    <div className="bg-black text-white">
+      <div className="px-4 py-4">
         <div className="flex justify-between items-center space-x-8">
           <Logo />
-          <div className="flex-1">
+          <div className="hidden sm:block sm:flex-1">
             <Navbar />
           </div>
           <LanguageSwitcher />
         </div>
-        <div className="mt-32 flex flex-col items-center justify-center space-y-12">
+        <div className="mt-12 md:mt-32 flex flex-col items-center justify-center space-y-12">
           <div className="h-48 w-48 border rounded-full overflow-hidden">
             <Image
               src={ProfileImg}

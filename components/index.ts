@@ -10,4 +10,3 @@ export { default as AboutSection } from "./AboutSection";
 export { default as ProjectSection } from "./ProjectSection";
 export { default as ContactSection } from "./ContactSection";
 export { default as Label } from "./Label";
-export { default as ImageSlider } from "./ImageSlider";
