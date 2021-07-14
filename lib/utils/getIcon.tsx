@@ -17,6 +17,7 @@ import {
   SiPostgresql,
   SiTypescript,
   SiPrismic,
+  SiElectron,
 } from "react-icons/si";
 import { SanitySVG } from "../../components";
 
@@ -76,7 +77,11 @@ export function getIcon(iconName: string) {
       break;
     case "sanity cms":
       IconComponent = <SanitySVG />;
-      return;
+      break;
+    case "electron js":
+      IconComponent = <SiElectron />;
+      break;
+
     default:
       throw new Error("Invalid icon name");
   }

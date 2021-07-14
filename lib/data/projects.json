@@ -6,8 +6,11 @@
         "coverImg":"mueller.png",
         "technologies": ["html","css","javascript"],
         "excerpt":"Freelance project for a designing the landing page for a cleaning agency based in Berlin.",
-        "description":"",
-        "url":"https://www.mueller4clean.com/"
+        "description":["This project was carried out for Mueller 4 clean UG, a cleaning agency located in Berlin, Germany. The client wanted a simple yet beautiful landing page showcasing the services they offer in order to attract potential clients.","The client was satisfied that the website has given them an online presence which has increased their clientele."],
+        "url":"https://www.mueller4clean.com/",
+        "images": ["mueller-1.png","mueller-2.png","mueller-3.png","mueller-4.png"],
+        "imgAlt":"Mueller 4 clean website",
+        "githubUrl":"https://github.com/ofemmy/mueller4clean"
     },
     "bruderhilfe":{
         "id":2,
@@ -16,27 +19,36 @@
         "coverImg":"bruderhilfe.png",
         "technologies":["react","next js","sanity cms"],
         "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
-        "description":"",
-        "url":"https://www.bruder-hilfe.com/"
+        "description":["This project was done for Bruderhilfe Social Development Initiative, a non-governmental organisation based in Nigeria and Germany. I was tasked with re-designing the website with the aim of making it modern and secure, while also showcasing their projects across Nigeria.","The backend content is hosted on Sanity CMS and is connected to the frontend developed with Next JS, a popular React framework with features like hybrid static and server side rendering which is a big plus for SEO."],
+        "url":"https://www.bruder-hilfe.com/",
+        "images": ["bruderhilfe-1.png","bruderhilfe-2.png","bruderhilfe-3.png","bruderhilfe-4.png"],
+        "imgAlt":"Bruderhilfe website",
+        "githubUrl":"https://github.com/ofemmy/bruderhilfeweb"
     },
     "geldtrack":{
         "id":3,
         "slug":"geldtrack",
         "title":"Geldtrack",
-        "coverImg":"geldtrack.png",
+        "coverImg":"geldtrack-cover.png",
         "technologies":["react","graphql","postgres"],
         "excerpt":"Freelance project for a non-governmental organisation based in Nigeria.",
-        "description":"",
-        "url":"https://www.geldtrack.io/"
+        "description":["Geldtrack (geld means 'Money' in German) is an expense tracker and budget application designed to be easy yet effective to use. It has features like single entries, recurring entries, and budgeting.","The application was develpoed with the aid of Redwood JS, a framework for developing full stack react applications. The backend is a GraphQl Apollo server connected to a Postgres Database, and communicating with the frontend written in React with the aid of Apollo client.","This application gave me the opportunity to develop across the full spectrum of web application develpoment and also learn how to plan and implement full stack applications."],
+        "url":"https://www.geldtrack.io/",
+        "images": ["geldtrack-1.png","geldtrack-2.png","geldtrack-3.png","geldtrack-4.png"],
+        "imgAlt":"Geldtrack website",
+        "githubUrl":"https://github.com/ofemmy/geldtrack"
     },
     "pdfkit":{
         "id":4,
         "slug":"pdfkit",
         "title":"Pdf Kit",
-        "coverImg":"pdfkit.png",
-        "technologies":["node js","vue"],
+        "coverImg":"pdfkit.gif",
+        "technologies":["node js","vue","electron js"],
         "excerpt":"A cross-platform desktop application for merging and splitting pdf files.",
-        "description":"",
-        "url":"https://github.com/ofemmy/pdfkit"
+        "description":["This was a personal project inspired by my need to merge and split pdf files. I decided on a native desktop application because I wanted one that does not need an internet connection and is also secure because i can guarantee that no sensitive documents are going to be uploaded to any foreign server over the internet.","With the aid of Electron JS, I was able to also make it a cross-platform application that can work both on Mac and Windows OSes.","The backend logic was written in Node JS and the frontend was written in Vue JS."],
+        "url":"https://github.com/ofemmy/pdfkit",
+        "imgAlt":"PDF Kit application",
+        "githubUrl":"https://github.com/ofemmy/pdfkit"
+       
     }
 }

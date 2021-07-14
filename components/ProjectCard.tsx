@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { getIcon } from "../lib/utils/getIcon";
 import Tab from "./Tab";
 interface ProjectCardProps {
@@ -7,21 +8,23 @@ interface ProjectCardProps {
     title: string;
     slug: string;
     excerpt: string;
-    description: string;
+    description: string[];
     coverImg: string;
     technologies: string[];
     url: string;
+    images: string[];
+    githubUrl: "";
   };
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const img = require(`../public/${project.coverImg}`);
   return (
-    <div className="min-h-[600px] bg-white rounded-sm shadow-sm flex flex-col">
-      <div className="h-[288px] bg-black relative overflow-hidden border-b shadow-xs">
+    <div className="min-h-[600px] bg-white rounded-sm shadow-sm flex flex-col hover:shadow-lg">
+      <div className="h-[288px] bg-gray-900 relative overflow-hidden border-b shadow-xs">
         <Image src={img} alt="Mueller 4 clean website cover" />
       </div>
-      <div className="px-6 py-8 border flex-1 flex flex-col justify-between">
+      <div className="px-6 py-8 flex-1 flex flex-col justify-between">
         <div>
           <h2 className="text-2xl font-bold leading-7 text-orange-600 sm:text-3xl sm:truncate">
             {project.title}
@@ -39,9 +42,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
         <div className="space-x-6">
-          <button className="inline-flex items-center px-4 py-2 border border-orange-600 text-base font-medium rounded-sm shadow-sm text-orange-600 bg-transparent hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:text-white">
-            Read More
-          </button>
+          <Link href={`/projects/${encodeURIComponent(project.slug)}`}>
+            <a className="inline-flex items-center px-4 py-2 border border-orange-600 text-base font-medium rounded-sm shadow-sm text-orange-600 bg-transparent hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 hover:text-white">
+              Read More
+            </a>
+          </Link>
           <a
             href={project.url}
             target="_blank"

@@ -41,7 +41,7 @@ export default function ContactSection() {
 
               <a
                 className="flex space-x-2 hover:text-orange-600"
-                href="https://www.linkedin.com/in/oladayo-olufemi-fagbemi-38a613a3/"
+                href="https://linkedin.com/in/oladayo-olufemi"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -5,7 +5,7 @@ import { Logo, Navbar } from "../components";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { classNames } from "../lib/utils";
-import TestImg from "../public/headshot.png";
+import ProfileImg from "../public/oladayo.png";
 
 export default function Hero() {
   const { t } = useTranslation("common");
@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="mt-32 flex flex-col items-center justify-center space-y-12">
           <div className="h-48 w-48 border rounded-full overflow-hidden">
             <Image
-              src={TestImg}
+              src={ProfileImg}
               objectFit="cover"
               alt="Image of oladayo"
               layout="responsive"
