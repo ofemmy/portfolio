@@ -29,14 +29,14 @@ export default function AboutSection() {
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium  text-orange-700 bg-orange-100 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                 >
                   <ChatAlt2Icon className="h-4 mr-2" />
-                  <span>Contact me</span>
+                  <span>{t("contactMe")}</span>
                 </a>
                 <button
                   type="button"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium  text-orange-700 bg-orange-100 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                 >
                   <DownloadIcon className="h-4 mr-2" />
-                  <span> Download Resume</span>
+                  <span>{t("download")}</span>
                 </button>
               </div>
             </div>
@@ -58,11 +58,7 @@ export default function AboutSection() {
                   </div>
                 ))}
               </div>
-              <p className="text-sm leading-relaxed">
-                While I am comfortable in working with the above languages and
-                technologies, I am also open to learning and working with the
-                ones I am not yet familiar with.
-              </p>
+              <p className="text-sm leading-relaxed">{t("skills")}</p>
             </div>
           </div>
         </div>

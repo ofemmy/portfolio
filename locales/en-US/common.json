@@ -10,5 +10,8 @@
     "knowMore":"More About me",
     "aboutMe1":"My name is Oladayo Olufemi, a fullstack web developer based in Berlin, Germany. My passion and love for problem solving led to my decision to transition from Electrical Engineering to Software Development in 2018.",
     "aboutMe2":"I have so far gained experience working with programming languages and technologies across the front and back ends of web development, using the skills I have gained to provide solution and create value both for myself and those around me.",
-    "aboutMe3":"I am self-motivated, value-driven and always open to learn new things in order to improve myself."
+    "aboutMe3":"I am self-motivated, value-driven and always open to learn new things in order to improve myself.",
+    "skills":"While I am comfortable in working with the above languages and technologies, I am also open to learning and working with the ones I am not yet familiar with.",
+    "download":"Download Resume",
+    "contactMe":"Contact Me"
 }
