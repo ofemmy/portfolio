@@ -12,8 +12,8 @@ interface ProjectCardProps {
     coverImg: string;
     technologies: string[];
     url: string;
-    images: string[];
-    githubUrl: "";
+    images?: string[];
+    githubUrl: string;
   };
 }
 
