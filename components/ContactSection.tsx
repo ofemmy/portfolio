@@ -35,7 +35,7 @@ export default function ContactSection() {
           Contact Me
         </h2>
         <div className="mt-12">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid sm:grid-cols-2 gap-10">
             <div className=" py-8 px-6 space-y-6">
               <p>You can connect with me on the following platforms: </p>
 

@@ -3,7 +3,7 @@ import Projects from "../lib/data/projects.json";
 export default function ProjectSection() {
   return (
     <Section id="projects" bgColor="bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6 sm:px-0">
+      <div className="max-w-6xl mx-auto px-6">
         <h2 className="uppercase text-center font-bold text-xl text-orange-600">
           Projects
         </h2>

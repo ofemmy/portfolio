@@ -13,7 +13,7 @@ export default function AboutSection() {
   const { t } = useTranslation("common");
   return (
     <Section id="about">
-      <div className="max-w-6xl mx-auto px-6 sm:px-0">
+      <div className="max-w-6xl mx-auto px-6">
         <h2 className="uppercase text-center font-bold text-xl text-orange-600">
           About me
         </h2>
@@ -48,18 +48,20 @@ export default function AboutSection() {
                     <h2 className="uppercase font-normal text-sm text-orange-600">
                       {item[0]}
                     </h2>
-                    <div className="mt-4 space-x-4">
+                    <div className="mt-4 space-y-4 sm:space-y-0">
                       {item[1].map((lang) => (
-                        <Tab key={lang}>
-                          {getIcon(lang)}
-                          <span className="text-xs uppercase">{lang}</span>
-                        </Tab>
+                        <div className="mr-2 inline-flex" key={lang}>
+                          <Tab>
+                            {getIcon(lang)}
+                            <span className="text-xs uppercase">{lang}</span>
+                          </Tab>
+                        </div>
                       ))}
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="text-sm leading-relaxed">{t("skills")}</p>
+              <p className="text-sm leading-relaxed mt-4 sm:mt-0">{t("skills")}</p>
             </div>
           </div>
         </div>

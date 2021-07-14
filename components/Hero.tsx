@@ -12,7 +12,7 @@ export default function Hero() {
   const greet = t("test");
   return (
     <div className="bg-black text-white">
-      <div className="px-4 py-4">
+      <div className="px-4 pt-4 pb-12">
         <div className="flex justify-between items-center space-x-8">
           <Logo />
           <div className="hidden sm:block sm:flex-1">
