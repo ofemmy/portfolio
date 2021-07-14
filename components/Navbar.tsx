@@ -13,19 +13,22 @@ export default function Navbar() {
   const projects = t("projects");
   const contact = t("contact");
   return (
-    <div className="text-white text-sm py-2 uppercase flex items-center justify-center space-x-8">
-      {navigation.map((route) => (
-        <a
-          key={route}
-          href={`#${route}`}
-          onClick={() => setCurrentRoute(route)}
-          className={classNames(
-            isCurrent(route) ? "font-semibold text-orange-600" : "text-white"
-          )}
-        >
-          {t(route)}
-        </a>
-      ))}
+    // <div className="text-white text-sm py-2 uppercase flex items-center justify-center space-x-8">
+    //   {navigation.map((route) => (
+    //     <a
+    //       key={route}
+    //       href={`#${route}`}
+    //       onClick={() => setCurrentRoute(route)}
+    //       className={classNames(
+    //         isCurrent(route) ? "font-semibold text-orange-600" : "text-white"
+    //       )}
+    //     >
+    //       {t(route)}
+    //     </a>
+    //   ))}
+    // </div>
+    <div>
+      
     </div>
   );
 }

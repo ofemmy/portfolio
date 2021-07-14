@@ -3,6 +3,7 @@ import {
   ContactSection,
   Hero,
   ProjectSection,
+  Footer,
 } from "../components";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <ProjectSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

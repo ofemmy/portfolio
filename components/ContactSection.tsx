@@ -30,7 +30,7 @@ export default function ContactSection() {
   };
   return (
     <Section id="contact" bgColor="bg-black">
-      <div className="max-w-6xl mx-auto px-6 sm:px-0 text-gray-100">
+      <div className="max-w-6xl mx-auto px-6 text-gray-100">
         <h2 className="uppercase text-center font-bold text-xl text-orange-600">
           Contact Me
         </h2>
@@ -74,7 +74,7 @@ export default function ContactSection() {
                 id="my-form"
               >
                 <div>
-                  <Label forEl="name" title="Name" />
+                  {/* <Label forEl="name" title="Name" /> */}
 
                   <div className="mt-1">
                     <input
@@ -89,7 +89,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div>
-                  <Label forEl="email" title="Email" />
+                  {/* <Label forEl="email" title="Email" /> */}
 
                   <div className="mt-1">
                     <input
@@ -105,7 +105,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <Label forEl="message" title="Message" />
+                  {/* <Label forEl="message" title="Message" /> */}
                   <div className="mt-1">
                     <textarea
                       {...register("message", { required: true })}
@@ -113,7 +113,7 @@ export default function ContactSection() {
                       name="message"
                       rows={4}
                       className="shadow-sm focus:ring-orange-500 focus:border-orange-500 mt-1 block w-full sm:text-sm border border-gray-700 rounded-md bg-gray-700"
-                      placeholder=""
+                      placeholder="Message"
                       defaultValue={""}
                     />
                   </div>
