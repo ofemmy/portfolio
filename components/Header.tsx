@@ -1,5 +1,4 @@
 import { Fragment, useState } from "react";
-import useTranslation from "next-translate/useTranslation";
 import { classNames } from "../lib/utils";
 import { LanguageSwitcher } from "../components";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -12,7 +11,6 @@ export default function Header() {
   const [currentRoute, setCurrentRoute] = useState("home");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const isCurrent = (route: string) => route === currentRoute;
-  const { t } = useTranslation("common");
 
   return (
     <header className="py-6 sticky top-0 z-40 bg-black">
@@ -31,10 +29,10 @@ export default function Header() {
                     : "text-white"
                 )}
               >
-                {t(route)}
+                {route.toUpperCase()}
               </a>
             ))}
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </>
         </div>
         <div className="block md:hidden">
@@ -113,13 +111,13 @@ export default function Header() {
                             : "text-white"
                         )}
                       >
-                        {t(route)}
+                        {route.toUpperCase()}
                       </a>
                     </Link>
                   ))}
                 </nav>
               </div>
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
             </div>
           </Transition.Child>
           <div className="flex-shrink-0 w-14" aria-hidden="true">
